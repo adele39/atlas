@@ -32,7 +32,27 @@
         </section>
         <section id="register">
             <h2>报名</h2>
-            <p>报名表单明天完成</p>
+            <form id="register-form">
+                <div>
+                    <label for="name">姓名</label>
+                    <input id="name" name="name" type="text" required minlength="2" autocomplete="name">
+                </div>
+                <div>
+                    <label for="email">邮箱</label>
+                    <input id="email" name="email" required type="email" autocomplete="email">
+                </div>
+                <div>
+                    <label for="wallet">钱包地址</label>
+                    <input id="wallet" name="wallet" type="text" required minlength="10" autocomplete="off" spellcheck="false" aria-describedby="wallet-hint">
+                    <p id="wallet-hint">仅用于活动登记演示，不会发起交易。</p>
+                </div>
+                <div>
+                    <input id="consent" name="consent" type="checkbox" required>
+                    <label for="consent">我同意活动规则</label>
+                </div>
+                <button type="submit">提交报名</button>
+
+            </form>
         </section>
         <section id="faq">
             <h2>常见问题</h2>
@@ -42,6 +62,7 @@
             <P>本周只做页面演示，不需要连接真实钱包。</p>
             <h3>报名信息会用在哪里？</h3>
             <p>仅用于活动登记演示，不会发起任何交易。</p>
+
         </section>
     </main>
     <footer>
